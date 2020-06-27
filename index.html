@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="all">
+   
+    <h1> Javascript Calculator</h1> 
+        <table > 
+           <form name="form">
+              <input id="result" name="result" type="text" value="" />
+              <input id="input" name="input" type="text" value="0" />
+        </form> 
+           <tr> 
+            <td class="one"><input type="button" value="&#x2612" onclick="back()"/> </td>
+            <td class="one"><input type="button" value="&#x221A" onclick="sqrots()"/> </td> 
+            <td class="one"><input type="button" value="Percen" onclick="operationperc()"/> </td>
+            <td class="one"><input type="button" value="C" onclick="clr()"/> </td> 
+            <td class="one"><input type="button" value="&#x00F7" onclick="operationdivid()"/> </td>
+         </tr>
+           <tr> 
+            <td class="one"><input type="button" value="x&sup2" onclick="operationpow2()"/> </td>
+            <td><input type="button" value="7" onclick="getNumber('7')"/> </td> 
+            <td><input type="button" value="8" onclick="getNumber('8')"/> </td> 
+            <td><input type="button" value="9" onclick="getNumber('9')"/> </td> 
+            <td class="one"><input type="button" value="&times" onclick="operationmult()"/> </td>  
+           </tr> 
+           <tr> 
+            <td class="one"><input type="button" value="^" onclick="operationpown()"/> </td>
+              <td><input type="button" value="4" onclick="getNumber('4')"/> </td> 
+              <td><input type="button" value="5" onclick="getNumber('5')"/> </td> 
+              <td><input type="button" value="6" onclick="getNumber('6')"/> </td> 
+              <td class="one"><input type="button" value="&#x2212" onclick="operationminus()"/> </td> 
+           </tr> 
+           <tr>
+            <td class="one"><input type="button" value="n!" onclick="fact()"/> </td>  
+            <td><input type="button" value="1" onclick="getNumber('1')"/> </td> 
+            <td><input type="button" value="2" onclick="getNumber('2')"/> </td> 
+            <td><input type="button" value="3" onclick="getNumber('3')"/> </td> 
+            <td class="one"><input type="button" value="+" onclick="operationplus()"/> </td> 
+            
+           </tr> 
+           <tr> 
+              <td class="one"><input type="button" value="mod" onclick="mod()"/> </td>
+              <td><input type="button" value="00" onclick="getNumber('00')"/> </td> 
+              <td><input type="button" value="0" onclick="getNumber('0')"/> </td>
+              <td><input type="button" value="&#x22C5" onclick="getNumber('.')"/> </td>  
+              <td class="two"><input type="button" value="=" onclick="equalsto()"/> </td> 
+               
+           </tr> 
+           
+        </table> 
+        <script src="./app.js"></script>
+</body>
+</html>
